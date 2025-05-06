@@ -27,3 +27,23 @@
 .animate-float-delayed {
   animation: float-delayed 6s ease-in-out infinite;
 }
+@keyframes float {
+  from {
+    transform: translateY(-150px);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .weather-card {
+    @apply bg-white/20 backdrop-blur-md rounded-xl border border-white/20 shadow-lg;
+  }
+}
