@@ -19,33 +19,50 @@ const SearchBar: React.FC<SearchBarProps> = ({ onCitySelect, initialCity = '' })
     'London', 'New York', 'Tokyo', 'Paris', 'Sydney', 'Berlin', 'Moscow', 'Beijing',
     'Mumbai', 'Delhi', 'Shanghai', 'São Paulo', 'Mexico City', 'Cairo', 'Los Angeles',
     'Bangkok', 'Buenos Aires', 'Istanbul', 'Karachi', 'Dhaka', 'Manila', 'Seoul',
-    
+  
     // US cities
     'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Antonio', 'San Diego', 
     'Dallas', 'San Jose', 'Austin', 'Jacksonville', 'San Francisco', 'Seattle',
     'Denver', 'Boston', 'Atlanta', 'Miami', 'Las Vegas', 'Portland',
-    
+  
     // European cities
     'Madrid', 'Rome', 'Athens', 'Amsterdam', 'Brussels', 'Vienna', 'Stockholm',
     'Prague', 'Warsaw', 'Budapest', 'Barcelona', 'Dublin', 'Lisbon', 'Copenhagen',
     'Helsinki', 'Oslo', 'Zurich', 'Geneva', 'Munich', 'Frankfurt', 'Milan',
-    
+  
     // Asian cities
     'Singapore', 'Hong Kong', 'Dubai', 'Abu Dhabi', 'Taipei', 'Kuala Lumpur',
     'Jakarta', 'Ho Chi Minh City', 'Hanoi', 'Bangalore', 'Chennai', 'Kolkata',
     'Lahore', 'Riyadh', 'Jeddah', 'Baghdad', 'Tehran', 'Osaka', 'Kyoto', 'Yokohama',
-    
+  
+    // Indian cities
+    'Ahmedabad', 'Pune', 'Surat', 'Jaipur', 'Lucknow', 'Kanpur', 'Nagpur', 'Indore',
+    'Thane', 'Bhopal', 'Visakhapatnam', 'Patna', 'Vadodara', 'Ghaziabad', 'Ludhiana',
+    'Agra', 'Nashik', 'Faridabad', 'Meerut', 'Rajkot', 'Kalyan-Dombivli', 'Vasai-Virar',
+    'Varanasi', 'Srinagar', 'Ranchi', 'Jodhpur', 'Raipur', 'Guwahati', 'Chandigarh',
+    'Amritsar', 'Allahabad', 'Coimbatore', 'Vijayawada', 'Madurai', 'Jabalpur',
+    'Gwalior', 'Noida', 'Kochi', 'Hubli-Dharwad', 'Mysuru', 'Tiruchirappalli',
+    'Bareilly', 'Aligarh', 'Moradabad', 'Jalandhar', 'Bhubaneswar', 'Salem',
+    'Warangal', 'Guntur', 'Bhiwandi', 'Cuttack', 'Firozabad', 'Kota', 'Kozhikode',
+    'Durg', 'Bhilai', 'Bilaspur', 'Raigarh', 'Korba', 'Rourkela', 'Dhanbad', 'Asansol',
+    'Ambikapur', 'Kolkata', 'Jammu', 'Srinagar', 'Nanded', 'Belgaum', 'Shimla', 'Dehradun',
+    'Gaya', 'Rishikesh', 'Haridwar', 'Haldwani', 'Muzaffarpur', 'Kota', 'Agartala',
+    'Jalgaon', 'Puducherry', 'Kannur', 'Siliguri', 'Vellore', 'Tirunelveli', 'Erode',
+    'Madurai', 'Tirupati', 'Hosur', 'Mysore', 'Udaipur', 'Kochi', 'Bhubaneshwar',
+    'Nagapattinam', 'Palakkad', 'Mangalore', 'Warangal', 'Jhansi', 'Rampur', 'Fatehpur',
+  
     // Australian and NZ cities
     'Melbourne', 'Brisbane', 'Perth', 'Adelaide', 'Auckland', 'Wellington',
-    
+  
     // African cities
     'Lagos', 'Johannesburg', 'Cape Town', 'Nairobi', 'Addis Ababa', 'Accra',
     'Casablanca', 'Algiers', 'Tunis', 'Khartoum', 'Dar es Salaam',
-    
+  
     // South American cities
     'Rio de Janeiro', 'Santiago', 'Lima', 'Bogotá', 'Caracas', 'Montevideo',
     'Quito', 'La Paz'
   ];
+  
 
   // Use OpenWeatherMap's geocoding API for more accurate city suggestions
   const fetchCitySuggestions = async (query: string) => {
